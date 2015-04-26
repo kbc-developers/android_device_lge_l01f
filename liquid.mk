@@ -2,18 +2,18 @@
 TARGET_SCREEN_HEIGHT := 1920
 TARGET_SCREEN_WIDTH := 1080
 
-# Inherit some common CM stuff.
-$(call inherit-product, vendor/cm/config/common_full_phone.mk)
+# Inherit some common Liquid stuff.
+$(call inherit-product, vendor/liquid/config/common_phone.mk)
 
 # Enhanced NFC
-$(call inherit-product, vendor/cm/config/nfc_enhanced.mk)
+$(call inherit-product, vendor/liquid/config/nfc_enhanced.mk)
 
 # Inherit device configuration
 $(call inherit-product, device/lge/l01f/l01f.mk)
 
 ## Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := l01f
-PRODUCT_NAME := cm_l01f
+PRODUCT_NAME := liquid_l01f
 PRODUCT_BRAND := DOCOMO
 PRODUCT_MODEL := L01F
 PRODUCT_MANUFACTURER := lge
